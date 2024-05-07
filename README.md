@@ -10,6 +10,8 @@ This project aims to develop a machine learning model capable of predicting the 
 ├── amt_baseline.ipynb
 ├── amt_dnn.ipynb
 ├── amt_lstm.ipynb
+├── audio_results/ #audio and midi note activations for a test and predicted audio
+└── README.md
 ```
 
 ## Dataset
@@ -38,11 +40,19 @@ The models' performance was evaluated using metrics like accuracy (a modified ve
 
 The best DNN model achieved an accuracy of 37.32%, outperforming the baseline logistic regression model, which achieved an accuracy of 10.75%. However, the LSTM models struggled to achieve satisfactory accuracy despite various optimization strategies.
 
+Below, we can see the similarities between the `Actual Midi Note Activation` and `Predicted Midi Note Activation` for a particular audio.
+
+![Actual Midi Note Activation](audio_results/y_test_midi_note_activations.webp?raw=true)
+
+![Predicted Midi Note Activation](audio_results/predictions_midi_note_activations.webp?raw=true)
+
+Furthermore, we can also listen to and compare the audios for the actual audio (`y_test_output60000.mid`) mentioned above and the audio generated from the model predictions (`predictions_output60000.mid`) in the `audio_results` folder.
+
 ## Conclusion
 
 While the results were not ideal, this project provides valuable insights into the challenges of automatic music transcription and paves the way for future research in this area, potentially exploring attention-based models, transformers, etc.
 
 ## Contributors
-* Argy Sakti
-* Sean Wiryadi
-* Shriya Kalakata
+* [Argy Sakti](https://github.com/asakti47)
+* [Sean Wiryadi](https://github.com/sean292002)
+* [Shriya Kalakata](https://github.com/shriyakalakata)
