@@ -32,6 +32,11 @@ Two main architectures were explored:
 
 2. **Long Short-Term Memory (LSTM)**: The LSTM architecture was implemented to capture short-term and long-term dependencies in the audio data. Transfer learning was also explored by initializing the LSTM weights with pre-trained weights from the DNN models.
 
+More:
+* Hyperparameter tuning (Grid Search) on Batch Size and Dropout
+* Regularization techniques: Dropout and Early Stopping
+* Optimization techniques: Cyclical Learning Rate, use of Minibatches
+
 ## Evaluation
 
 The models' performance was evaluated using metrics like accuracy (a modified version that doesn't take True Negatives (TN) into consideration), precision, recall, and F1-score. The predictions were compared against the time-aligned MIDI annotations.
@@ -50,7 +55,7 @@ Furthermore, we can also listen to and compare the audios for the actual audio (
 
 ## Conclusion
 
-While the results were not ideal, this project provides valuable insights into the challenges of automatic music transcription and paves the way for future research in this area, potentially exploring attention-based models, transformers, etc.
+While the accuracy scores may not seem ideal, with the best DNN model achieving an accuracy of 37.32%, it is important to note that the predicted MIDI note activations capture the overall structure and pattern of the actual MIDI note activations quite well. This can be observed from the visual similarities between the actual and predicted MIDI note activation plots. In the future, exploring more advanced architectures like attention-based models, transformers, etc. could potentially lead to further improvements in the model's performance. Despite the challenges, the progress made in this project demonstrates the potential for developing accurate automatic music transcription systems.
 
 ## Contributors
 * [Argy Sakti](https://github.com/asakti47)
