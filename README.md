@@ -4,13 +4,11 @@ This project aims to develop a machine learning model capable of predicting the 
 
 ## Code Structure
 ```
-├── datasets/ 
 ├── data_analysis.ipynb
-├── data_preprocessing.ipynb
-├── amt_baseline.ipynb
-├── amt_dnn.ipynb
-├── amt_lstm.ipynb
-├── audio_results/ #audio and midi note activations for a test and predicted audio
+├── amt_baseline.ipynb # includes a baseline multiclass logistic regression model
+├── amt_dnn.ipynb # includes deep neural network models
+├── amt_lstm.ipynb # includes lstm (long short term memory) and transfer learning
+├── audio_results/ # audio and midi note activations for a test and predicted audio
 └── README.md
 ```
 
