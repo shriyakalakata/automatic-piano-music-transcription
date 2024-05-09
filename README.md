@@ -51,6 +51,14 @@ Below, we can see the similarities between the `Actual Midi Note Activation` and
 
 Furthermore, we can also listen to and compare the audios for the actual audio (`y_test_output60000.mid`) mentioned above and the audio generated from the model predictions (`predictions_output60000.mid`) in the `audio_results` folder.
 
+## Future Improvements
+
+1. **Online Platform for Testing**: Create a web-based application where users can upload their `.midi` or `.mid` files and compare the generated MIDI note activations against the original files. This will provide a convenient way to test and evaluate the model's predictions.
+
+2. **Investigate LSTM Issues**: Perform a thorough analysis of why the LSTM models struggled in comparison to the DNN. This will involve investigating hyperparameters, architecture, and reshaping to identify potential areas of improvement.
+
+3. **Use Transformers and Attention Mechanisms**: Incorporate advanced architectures like transformers and attention mechanisms to better capture complex temporal dependencies in the music data. This should improve the model's ability to differentiate between notes and enhance transcription accuracy.
+
 ## Conclusion
 
 While the accuracy scores may not seem ideal, with the best DNN model achieving an accuracy of 37.32%, it is important to note that the predicted MIDI note activations capture the overall structure and pattern of the actual MIDI note activations quite well. This can be observed from the visual similarities between the actual and predicted MIDI note activation plots. In the future, exploring more advanced architectures like attention-based models, transformers, etc. could potentially lead to further improvements in the model's performance. Despite the challenges, the progress made in this project demonstrates the potential for developing accurate automatic music transcription systems.
